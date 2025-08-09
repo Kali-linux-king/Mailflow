@@ -1,0 +1,1086 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevToolkit - 30+ Free Online Tools for Developers & Marketers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif']
+                },
+                colors: {
+                    primary: '#2563eb',
+                    secondary: '#1e293b', 
+                    accent: '#0ea5e9'
+                }
+            }
+        }
+    };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-inter bg-slate-50 text-slate-800">
+
+    <!-- @COMPONENT: Header -->
+    <header class="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <i class="fas fa-tools text-white text-sm"></i>
+                        </div>
+                        <h1 class="text-xl font-bold text-secondary">DevToolkit</h1>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-6">
+                    <nav class="flex space-x-6">
+                        <a href="#tools" class="text-slate-600 hover:text-primary font-medium">Tools</a>
+                        <a href="#categories" class="text-slate-600 hover:text-primary font-medium">Categories</a>
+                        <a href="#analytics" class="text-slate-600 hover:text-primary font-medium">Analytics</a>
+                    </nav>
+                    <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-medium">
+                        <i class="fas fa-bookmark mr-2"></i>Bookmarks
+                    </button>
+                </div>
+
+                <button class="md:hidden p-2">
+                    <i class="fas fa-bars text-slate-600"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section class="bg-gradient-to-br from-slate-50 to-blue-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-secondary mb-6">
+                    30+ Free Online Tools for 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Developers & Marketers</span>
+                </h1>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
+                    Boost your productivity with our comprehensive collection of developer tools, SEO utilities, converters, and more. No registration required, privacy-focused, lightning-fast processing.
+                </p>
+                
+                <!-- Search Bar -->
+                <div class="max-w-2xl mx-auto relative">
+                    <div class="relative">
+                        <input 
+                            type="text" 
+                            placeholder="Search 30+ tools... (e.g., JSON formatter, QR generator, hash calculator)"
+                            class="w-full py-4 pl-12 pr-20 text-lg border-2 border-slate-200 rounded-2xl focus:border-primary focus:outline-none shadow-lg"
+                            id="toolSearch"
+                        >
+                        <i class="fas fa-search absolute left-4 top-5 text-slate-400 text-lg"></i>
+                        <button class="absolute right-2 top-2 bg-primary text-white px-6 py-2 rounded-xl hover:bg-blue-700 font-medium">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary">30+</div>
+                    <div class="text-slate-600">Free Tools</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary">6</div>
+                    <div class="text-slate-600">Categories</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary">0</div>
+                    <div class="text-slate-600">Registration</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary">100%</div>
+                    <div class="text-slate-600">Privacy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Tool Categories -->
+    <section id="categories" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-secondary mb-4">Tool Categories</h2>
+                <p class="text-lg text-slate-600">Organized by use case for maximum productivity</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap justify-center mb-8 bg-white rounded-2xl p-2 shadow-sm border border-slate-200">
+                <button class="category-tab active px-6 py-3 rounded-xl font-medium m-1" data-category="all">
+                    <i class="fas fa-th-large mr-2"></i>All Tools
+                </button>
+                <button class="category-tab px-6 py-3 rounded-xl font-medium m-1" data-category="developer">
+                    <i class="fas fa-code mr-2"></i>Developer (8)
+                </button>
+                <button class="category-tab px-6 py-3 rounded-xl font-medium m-1" data-category="image">
+                    <i class="fas fa-image mr-2"></i>Image & Media (6)
+                </button>
+                <button class="category-tab px-6 py-3 rounded-xl font-medium m-1" data-category="pdf">
+                    <i class="fas fa-file-pdf mr-2"></i>PDF & Docs (5)
+                </button>
+                <button class="category-tab px-6 py-3 rounded-xl font-medium m-1" data-category="seo">
+                    <i class="fas fa-chart-line mr-2"></i>SEO & Marketing (5)
+                </button>
+                <button class="category-tab px-6 py-3 rounded-xl font-medium m-1" data-category="calculator">
+                    <i class="fas fa-calculator mr-2"></i>Calculators (4)
+                </button>
+                <button class="category-tab px-6 py-3 rounded-xl font-medium m-1" data-category="text">
+                    <i class="fas fa-font mr-2"></i>Text & Content (2)
+                </button>
+            </div>
+
+            <!-- Tools Grid -->
+            <div id="toolsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Developer Tools -->
+                <!-- JSON Formatter -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="developer" data-tool="json-formatter">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-brackets-curly text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-full">Popular</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">JSON Formatter</h3>
+                    <p class="text-slate-600 text-sm mb-4">Format, validate, and beautify JSON data with syntax highlighting and error detection.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-zap mr-1"></i>
+                        <span>Instant processing</span>
+                    </div>
+                </div>
+
+                <!-- Code Beautifier -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="developer" data-tool="code-beautifier">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-code text-purple-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Code Beautifier</h3>
+                    <p class="text-slate-600 text-sm mb-4">Format and beautify HTML, CSS, JavaScript, and other code languages.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-download mr-1"></i>
+                        <span>Download formatted</span>
+                    </div>
+                </div>
+
+                <!-- Regex Tester -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="developer" data-tool="regex-tester">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-search-plus text-red-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Regex Tester</h3>
+                    <p class="text-slate-600 text-sm mb-4">Test and debug regular expressions with real-time matching and explanations.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-lightbulb mr-1"></i>
+                        <span>Pattern explanation</span>
+                    </div>
+                </div>
+
+                <!-- Base64 Encoder/Decoder -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="developer" data-tool="base64">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-exchange-alt text-indigo-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Trending</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Base64 Encoder/Decoder</h3>
+                    <p class="text-slate-600 text-sm mb-4">Encode and decode text or files to/from Base64 format.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-file-upload mr-1"></i>
+                        <span>File support</span>
+                    </div>
+                </div>
+
+                <!-- URL Encoder/Decoder -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="developer" data-tool="url-encoder">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-link text-green-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">URL Encoder/Decoder</h3>
+                    <p class="text-slate-600 text-sm mb-4">Encode and decode URLs for safe transmission and compatibility.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-copy mr-1"></i>
+                        <span>Copy to clipboard</span>
+                    </div>
+                </div>
+
+                <!-- Hash Generators -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="developer" data-tool="hash-generator">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-fingerprint text-orange-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2 py-1 rounded-full">Secure</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Hash Generator</h3>
+                    <p class="text-slate-600 text-sm mb-4">Generate MD5, SHA-1, SHA-256, and other hash values for data integrity.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-shield-alt mr-1"></i>
+                        <span>Multiple algorithms</span>
+                    </div>
+                </div>
+
+                <!-- Password Generator -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="developer" data-tool="password-generator">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-key text-pink-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-full">Popular</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Password Generator</h3>
+                    <p class="text-slate-600 text-sm mb-4">Generate strong, secure passwords with customizable criteria and strength analysis.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-random mr-1"></i>
+                        <span>Cryptographically secure</span>
+                    </div>
+                </div>
+
+                <!-- Lorem Ipsum Generator -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="developer" data-tool="lorem-ipsum">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-paragraph text-teal-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Lorem Ipsum Generator</h3>
+                    <p class="text-slate-600 text-sm mb-4">Generate placeholder text for design and development projects.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-list-ol mr-1"></i>
+                        <span>Custom length</span>
+                    </div>
+                </div>
+
+                <!-- Image & Media Tools -->
+                <!-- Image Compressor -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="image" data-tool="image-compressor">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-compress text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-full">Popular</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Image Compressor</h3>
+                    <p class="text-slate-600 text-sm mb-4">Reduce image file sizes while maintaining quality for web optimization.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-images mr-1"></i>
+                        <span>Batch processing</span>
+                    </div>
+                </div>
+
+                <!-- Background Remover -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="image" data-tool="bg-remover">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-cut text-purple-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2 py-1 rounded-full">AI-Powered</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Background Remover</h3>
+                    <p class="text-slate-600 text-sm mb-4">Automatically remove backgrounds from images using AI technology.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-magic mr-1"></i>
+                        <span>AI-powered</span>
+                    </div>
+                </div>
+
+                <!-- Image Format Converter -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="image" data-tool="image-converter">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-exchange-alt text-green-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Image Format Converter</h3>
+                    <p class="text-slate-600 text-sm mb-4">Convert between JPG, PNG, WebP, GIF and other image formats.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-file-image mr-1"></i>
+                        <span>Multiple formats</span>
+                    </div>
+                </div>
+
+                <!-- QR Code Generator -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="image" data-tool="qr-generator">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-qrcode text-indigo-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Trending</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">QR Code Generator</h3>
+                    <p class="text-slate-600 text-sm mb-4">Create customizable QR codes for URLs, text, WiFi, and more.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-palette mr-1"></i>
+                        <span>Customizable design</span>
+                    </div>
+                </div>
+
+                <!-- Favicon Generator -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="image" data-tool="favicon-generator">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-globe text-red-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Favicon Generator</h3>
+                    <p class="text-slate-600 text-sm mb-4">Generate favicons in all required sizes for websites and web apps.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-mobile-alt mr-1"></i>
+                        <span>All platforms</span>
+                    </div>
+                </div>
+
+                <!-- Color Picker -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="image" data-tool="color-picker">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-red-400 to-purple-500 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-palette text-white text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2 py-1 rounded-full">Designer</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Color Picker</h3>
+                    <p class="text-slate-600 text-sm mb-4">Pick, convert, and generate color palettes with HEX, RGB, and HSL values.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-eye-dropper mr-1"></i>
+                        <span>Eyedropper tool</span>
+                    </div>
+                </div>
+
+                <!-- SEO & Marketing Tools -->
+                <!-- Meta Tag Generator -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="seo" data-tool="meta-generator">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-tags text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-full">SEO</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Meta Tag Generator</h3>
+                    <p class="text-slate-600 text-sm mb-4">Generate SEO-optimized meta tags for better search engine visibility.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-search mr-1"></i>
+                        <span>SEO optimized</span>
+                    </div>
+                </div>
+
+                <!-- URL Shortener -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="seo" data-tool="url-shortener">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-link text-green-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Popular</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">URL Shortener</h3>
+                    <p class="text-slate-600 text-sm mb-4">Create short URLs with analytics tracking and custom domains.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-chart-bar mr-1"></i>
+                        <span>Click tracking</span>
+                    </div>
+                </div>
+
+                <!-- PDF & Document Tools -->
+                <!-- PDF Merger -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="pdf" data-tool="pdf-merger">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-file-pdf text-red-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2 py-1 rounded-full">Popular</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">PDF Merger</h3>
+                    <p class="text-slate-600 text-sm mb-4">Combine multiple PDF files into a single document easily and securely.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-layer-group mr-1"></i>
+                        <span>Multiple files</span>
+                    </div>
+                </div>
+
+                <!-- Text Case Converter -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="text" data-tool="case-converter">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-font text-purple-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Text Case Converter</h3>
+                    <p class="text-slate-600 text-sm mb-4">Convert text between different cases: UPPER, lower, Title, camelCase, and more.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-text-width mr-1"></i>
+                        <span>Multiple formats</span>
+                    </div>
+                </div>
+
+                <!-- Unit Converter -->
+                <div class="tool-card bg-white rounded-2xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transition-all cursor-pointer" data-category="calculator" data-tool="unit-converter">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-ruler text-indigo-600 text-xl"></i>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2 py-1 rounded-full">Utility</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Unit Converter</h3>
+                    <p class="text-slate-600 text-sm mb-4">Convert between various units of measurement: length, weight, temperature, and more.</p>
+                    <div class="flex items-center text-xs text-slate-500">
+                        <i class="fas fa-balance-scale mr-1"></i>
+                        <span>All measurements</span>
+                    </div>
+                </div>
+
+                <!-- Additional tools would continue here following the same pattern... -->
+                <!-- For brevity, I'm showing the main categories with key examples -->
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="bg-slate-200 text-slate-700 px-8 py-3 rounded-xl hover:bg-slate-300 font-medium">
+                    <i class="fas fa-plus mr-2"></i>Show All Tools
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Tool Categories -->
+
+    <!-- @COMPONENT: Analytics Dashboard -->
+    <section id="analytics" class="py-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Usage Analytics & Popular Tools</h2>
+                <p class="text-lg text-slate-300">Real-time insights into tool usage and trends</p>
+            </div>
+
+            <!-- Analytics Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Most Used Tools -->
+                <div class="bg-slate-800 rounded-2xl p-6">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-fire text-orange-400 mr-3"></i>
+                        Most Popular Today
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-sm">
+                                    <i class="fas fa-brackets-curly"></i>
+                                </div>
+                                <span>JSON Formatter</span>
+                            </div>
+                            <span class="text-orange-400 font-medium">1,247 uses</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-pink-500 rounded-lg flex items-center justify-center text-sm">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <span>Password Generator</span>
+                            </div>
+                            <span class="text-orange-400 font-medium">892 uses</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center text-sm">
+                                    <i class="fas fa-qrcode"></i>
+                                </div>
+                                <span>QR Code Generator</span>
+                            </div>
+                            <span class="text-orange-400 font-medium">654 uses</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-sm">
+                                    <i class="fas fa-compress"></i>
+                                </div>
+                                <span>Image Compressor</span>
+                            </div>
+                            <span class="text-orange-400 font-medium">423 uses</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center text-sm">
+                                    <i class="fas fa-link"></i>
+                                </div>
+                                <span>URL Shortener</span>
+                            </div>
+                            <span class="text-orange-400 font-medium">381 uses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usage Stats -->
+                <div class="bg-slate-800 rounded-2xl p-6">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-chart-line text-blue-400 mr-3"></i>
+                        Usage Statistics
+                    </h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>Developer Tools</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>Image & Media</span>
+                                <span>28%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-purple-500 h-2 rounded-full" style="width: 28%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>PDF & Docs</span>
+                                <span>12%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 12%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>SEO & Marketing</span>
+                                <span>10%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 10%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span>Calculators</span>
+                                <span>5%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="bg-slate-800 rounded-2xl p-6">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-clock text-green-400 mr-3"></i>
+                        Recent Activity
+                    </h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                            <span class="text-slate-300">JSON formatted - 2 mins ago</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span class="text-slate-300">QR code generated - 3 mins ago</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
+                            <span class="text-slate-300">Image compressed - 5 mins ago</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
+                            <span class="text-slate-300">Password generated - 7 mins ago</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-pink-400 rounded-full"></div>
+                            <span class="text-slate-300">URL shortened - 12 mins ago</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-teal-400 rounded-full"></div>
+                            <span class="text-slate-300">Hash calculated - 15 mins ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Metrics -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-green-400 mb-2">99.9%</div>
+                    <div class="text-slate-300 text-sm">Uptime</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-blue-400 mb-2">&lt;100ms</div>
+                    <div class="text-slate-300 text-sm">Avg Response</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-purple-400 mb-2">24/7</div>
+                    <div class="text-slate-300 text-sm">Available</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-orange-400 mb-2">100%</div>
+                    <div class="text-slate-300 text-sm">Privacy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Analytics Dashboard -->
+
+    <!-- @COMPONENT: Tool Modal -->
+    <div id="toolModal" class="fixed inset-0 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen px-4">
+            <div class="fixed inset-0 bg-black bg-opacity-50" onclick="closeModal()"></div>
+            <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative z-10">
+                <div class="p-6 border-b border-slate-200">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div id="modalIcon" class="w-12 h-12 rounded-xl flex items-center justify-center">
+                                <!-- Icon will be inserted here -->
+                            </div>
+                            <div>
+                                <h2 id="modalTitle" class="text-2xl font-bold text-secondary">Tool Name</h2>
+                                <p id="modalDescription" class="text-slate-600">Tool description</p>
+                            </div>
+                        </div>
+                        <button onclick="closeModal()" class="p-2 hover:bg-slate-100 rounded-lg">
+                            <i class="fas fa-times text-slate-400"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="p-6">
+                    <div id="modalContent">
+                        <!-- Tool interface will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- @END_COMPONENT: Tool Modal -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <i class="fas fa-tools text-white text-sm"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">DevToolkit</h3>
+                    </div>
+                    <p class="text-slate-300 mb-6 max-w-md">
+                        Your ultimate collection of 30+ free online tools for developers, marketers, and creators. Fast, secure, and always free.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="bg-slate-700 hover:bg-slate-600 p-3 rounded-lg">
+                            <i class="fab fa-github text-xl"></i>
+                        </button>
+                        <button class="bg-slate-700 hover:bg-slate-600 p-3 rounded-lg">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </button>
+                        <button class="bg-slate-700 hover:bg-slate-600 p-3 rounded-lg">
+                            <i class="fab fa-discord text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Tool Categories</h4>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#" class="hover:text-white">Developer Tools</a></li>
+                        <li><a href="#" class="hover:text-white">Image & Media</a></li>
+                        <li><a href="#" class="hover:text-white">PDF & Documents</a></li>
+                        <li><a href="#" class="hover:text-white">SEO & Marketing</a></li>
+                        <li><a href="#" class="hover:text-white">Calculators</a></li>
+                        <li><a href="#" class="hover:text-white">Text & Content</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#" class="hover:text-white">API Documentation</a></li>
+                        <li><a href="#" class="hover:text-white">Usage Guide</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-slate-300 mb-4 md:mb-0">
+                        © 2025 DevToolkit. All rights reserved. Built with ❤️ for developers worldwide.
+                    </p>
+                    <div class="flex items-center space-x-6 text-sm text-slate-300">
+                        <span class="flex items-center space-x-2">
+                            <i class="fas fa-shield-alt text-green-400"></i>
+                            <span>100% Privacy</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                            <i class="fas fa-zap text-yellow-400"></i>
+                            <span>Client-side Processing</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                            <i class="fas fa-lock text-blue-400"></i>
+                            <span>Secure & Free</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+    (() => {
+        // Search functionality
+        const searchInput = document.getElementById('toolSearch');
+        const toolCards = document.querySelectorAll('.tool-card');
+        const categoryTabs = document.querySelectorAll('.category-tab');
+
+        // Search functionality
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase();
+            toolCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                const isMatch = title.includes(searchTerm) || description.includes(searchTerm);
+                card.style.display = isMatch ? 'block' : 'none';
+            });
+        }
+
+        searchInput?.addEventListener('input', performSearch);
+
+        // Category filtering
+        function filterByCategory(category) {
+            toolCards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update active tab
+            categoryTabs.forEach(tab => {
+                if (tab.dataset.category === category) {
+                    tab.classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                }
+            });
+        }
+
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                filterByCategory(tab.dataset.category);
+            });
+        });
+
+        // Tool modal functionality
+        const modal = document.getElementById('toolModal');
+
+        function openTool(toolData) {
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDescription = document.getElementById('modalDescription');
+            const modalIcon = document.getElementById('modalIcon');
+            const modalContent = document.getElementById('modalContent');
+
+            modalTitle.textContent = toolData.title;
+            modalDescription.textContent = toolData.description;
+            modalIcon.innerHTML = toolData.icon;
+            modalContent.innerHTML = toolData.content;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        window.closeModal = function() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        };
+
+        // Tool data and interfaces
+        const toolInterfaces = {
+            'json-formatter': {
+                title: 'JSON Formatter',
+                description: 'Format, validate, and beautify JSON data',
+                icon: '<i class="fas fa-brackets-curly text-blue-600 text-xl"></i>',
+                content: `
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Input JSON</label>
+                            <textarea class="w-full h-64 p-4 border border-slate-300 rounded-lg font-mono text-sm resize-none focus:ring-2 focus:ring-primary focus:border-primary" placeholder='{"name":"John","age":30}'></textarea>
+                            <div class="flex justify-between items-center mt-4">
+                                <div class="flex space-x-2">
+                                    <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700">Format</button>
+                                    <button class="bg-slate-500 text-white px-4 py-2 rounded-lg hover:bg-slate-600">Validate</button>
+                                    <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Minify</button>
+                                </div>
+                                <button class="text-slate-500 hover:text-slate-700">
+                                    <i class="fas fa-copy mr-1"></i>Copy
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Formatted Output</label>
+                            <div class="w-full h-64 p-4 bg-slate-50 border border-slate-300 rounded-lg font-mono text-sm overflow-auto">
+                                <div class="text-slate-500">Formatted JSON will appear here...</div>
+                            </div>
+                            <div class="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg">
+                                <div class="flex items-center text-green-800">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <span class="text-sm">JSON is valid</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'password-generator': {
+                title: 'Password Generator',
+                description: 'Generate strong, secure passwords',
+                icon: '<i class="fas fa-key text-pink-600 text-xl"></i>',
+                content: `
+                    <div class="max-w-2xl mx-auto">
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Generated Password</label>
+                            <div class="flex space-x-2">
+                                <input type="text" value="Kx9#mP$2vL@qR8nW" class="flex-1 p-4 border border-slate-300 rounded-lg font-mono text-lg" readonly>
+                                <button class="bg-primary text-white px-6 py-4 rounded-lg hover:bg-blue-700">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Length: <span class="font-bold">16</span></label>
+                                <input type="range" min="8" max="128" value="16" class="w-full">
+                                <div class="flex justify-between text-xs text-slate-500 mt-1">
+                                    <span>8</span>
+                                    <span>128</span>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-4">Options</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" checked class="mr-2">
+                                        <span class="text-sm">Uppercase (A-Z)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" checked class="mr-2">
+                                        <span class="text-sm">Lowercase (a-z)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" checked class="mr-2">
+                                        <span class="text-sm">Numbers (0-9)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" checked class="mr-2">
+                                        <span class="text-sm">Symbols (!@#$%)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex space-x-4 mb-6">
+                            <button class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-700 flex-1">
+                                <i class="fas fa-refresh mr-2"></i>Generate New Password
+                            </button>
+                            <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">
+                                <i class="fas fa-download mr-2"></i>Export
+                            </button>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-slate-800 mb-2">Password Strength: <span class="text-green-600">Very Strong</span></h4>
+                            <div class="w-full bg-slate-200 rounded-full h-2 mb-3">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                            <p class="text-sm text-slate-600">This password would take approximately <strong>600+ years</strong> to crack using brute force methods.</p>
+                        </div>
+                    </div>
+                `
+            },
+            'qr-generator': {
+                title: 'QR Code Generator',
+                description: 'Create customizable QR codes',
+                icon: '<i class="fas fa-qrcode text-indigo-600 text-xl"></i>',
+                content: `
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Content Type</label>
+                                    <select class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary">
+                                        <option>URL/Website</option>
+                                        <option>Plain Text</option>
+                                        <option>WiFi Network</option>
+                                        <option>Contact (vCard)</option>
+                                        <option>Email</option>
+                                        <option>SMS</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Content</label>
+                                    <textarea class="w-full h-24 p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary" placeholder="https://example.com"></textarea>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-slate-700 mb-2">Size</label>
+                                        <select class="w-full p-3 border border-slate-300 rounded-lg">
+                                            <option>200x200</option>
+                                            <option>300x300</option>
+                                            <option>400x400</option>
+                                            <option>500x500</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-slate-700 mb-2">Error Correction</label>
+                                        <select class="w-full p-3 border border-slate-300 rounded-lg">
+                                            <option>Medium (15%)</option>
+                                            <option>Low (7%)</option>
+                                            <option>Quartile (25%)</option>
+                                            <option>High (30%)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-slate-700 mb-2">Foreground Color</label>
+                                        <input type="color" value="#000000" class="w-full h-12 border border-slate-300 rounded-lg">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-slate-700 mb-2">Background Color</label>
+                                        <input type="color" value="#ffffff" class="w-full h-12 border border-slate-300 rounded-lg">
+                                    </div>
+                                </div>
+                                <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-blue-700 font-medium">
+                                    <i class="fas fa-magic mr-2"></i>Generate QR Code
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-slate-50 border-2 border-dashed border-slate-300 rounded-lg p-8 mb-6 flex items-center justify-center" style="width: 300px; height: 300px;">
+                                <div class="text-center text-slate-500">
+                                    <i class="fas fa-qrcode text-6xl mb-4"></i>
+                                    <p>QR Code will appear here</p>
+                                </div>
+                            </div>
+                            <div class="flex space-x-4">
+                                <button class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600">
+                                    <i class="fas fa-download mr-2"></i>Download PNG
+                                </button>
+                                <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+                                    <i class="fas fa-vector-square mr-2"></i>Download SVG
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        // Add click handlers for tool cards
+        toolCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const toolKey = card.dataset.tool;
+                if (toolInterfaces[toolKey]) {
+                    openTool(toolInterfaces[toolKey]);
+                } else {
+                    // For tools without interfaces, show a placeholder
+                    const title = card.querySelector('h3').textContent;
+                    const description = card.querySelector('p').textContent;
+                    const iconElement = card.querySelector('i');
+                    const iconClass = iconElement ? iconElement.className : 'fas fa-tools';
+                    
+                    openTool({
+                        title: title,
+                        description: description,
+                        icon: `<i class="${iconClass}"></i>`,
+                        content: `
+                            <div class="text-center py-12">
+                                <div class="text-6xl mb-4">🚧</div>
+                                <h3 class="text-xl font-semibold mb-2">Tool Interface Coming Soon</h3>
+                                <p class="text-slate-600 mb-6">We're working on bringing you this amazing tool. Check back soon!</p>
+                                <button class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                                    <i class="fas fa-bell mr-2"></i>Notify Me When Ready
+                                </button>
+                            </div>
+                        `
+                    });
+                }
+            });
+        });
+
+        // Style for active category tab
+        const style = document.createElement('style');
+        style.textContent = `
+            .category-tab.active {
+                background-color: #2563eb;
+                color: white;
+            }
+            .category-tab:not(.active) {
+                color: #64748b;
+            }
+            .category-tab:not(.active):hover {
+                background-color: #f1f5f9;
+                color: #334155;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // TODO: Implement business logic for tool processing
+        // TODO: Add API integration for advanced features
+        // TODO: Implement user preferences and bookmarking
+        // TODO: Add export functionality for batch operations
+    })();
+    </script>
+
+</body>
+</html>
