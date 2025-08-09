@@ -21,12 +21,16 @@ import { UnitConverter } from "./tools/unit-converter";
 import { WordCounter } from "./tools/word-counter";
 import { UrlShortener } from "./tools/url-shortener";
 import { MetaGenerator } from "./tools/meta-generator";
-import { CryptoPriceTracker } from "./tools/crypto-price-tracker";
-import { CryptoConverter } from "./tools/crypto-converter";
-import { WalletAddressValidator } from "./tools/wallet-address-validator";
-import { CryptoPortfolioTracker } from "./tools/crypto-portfolio-tracker";
-import { BlockchainExplorer } from "./tools/blockchain-explorer";
-import { CryptoNewsAggregator } from "./tools/crypto-news-aggregator";
+
+// New tools
+import { JWTDecoder } from "./tools/jwt-decoder";
+import { ApiTester } from "./tools/api-tester";
+import { ImageResizer } from "./tools/image-resizer";
+import { SVGOptimizer } from "./tools/svg-optimizer";
+import { PDFCompressor } from "./tools/pdf-compressor";
+import { SchemaGenerator } from "./tools/schema-generator";
+import { AgeCalculator } from "./tools/age-calculator";
+import { TextDiffChecker } from "./tools/text-diff-checker";
 
 interface ToolModalProps {
   tool: Tool | null;
@@ -50,50 +54,65 @@ export function ToolModal({ tool, isOpen, onClose }: ToolModalProps) {
 
   const renderToolComponent = () => {
     switch (tool.id) {
+      // Developer Tools
       case 'json-formatter':
         return <JsonFormatter />;
-      case 'password-generator':
-        return <PasswordGenerator />;
-      case 'qr-generator':
-        return <QrGenerator />;
+      case 'code-beautifier':
+        return <CodeBeautifier />;
+      case 'regex-tester':
+        return <RegexTester />;
       case 'base64-encoder':
         return <Base64Encoder />;
       case 'url-encoder':
         return <UrlEncoder />;
       case 'hash-generator':
         return <HashGenerator />;
+      case 'password-generator':
+        return <PasswordGenerator />;
       case 'lorem-ipsum':
         return <LoremIpsum />;
-      case 'code-beautifier':
-        return <CodeBeautifier />;
-      case 'regex-tester':
-        return <RegexTester />;
+      case 'jwt-decoder':
+        return <JWTDecoder />;
+      case 'api-tester':
+        return <ApiTester />;
+      
+      // Image & Media Tools
       case 'image-compressor':
         return <ImageCompressor />;
+      case 'qr-generator':
+        return <QrGenerator />;
       case 'color-picker':
         return <ColorPicker />;
-      case 'text-case-converter':
-        return <TextCaseConverter />;
-      case 'unit-converter':
-        return <UnitConverter />;
+      case 'image-resizer':
+        return <ImageResizer />;
+      case 'svg-optimizer':
+        return <SVGOptimizer />;
+      
+      // PDF & Document Tools
       case 'word-counter':
         return <WordCounter />;
-      case 'url-shortener':
-        return <UrlShortener />;
+      case 'text-case-converter':
+        return <TextCaseConverter />;
+      case 'pdf-compressor':
+        return <PDFCompressor />;
+      
+      // SEO & Marketing Tools
       case 'meta-generator':
         return <MetaGenerator />;
-      case 'crypto-price-tracker':
-        return <CryptoPriceTracker />;
-      case 'crypto-converter':
-        return <CryptoConverter />;
-      case 'wallet-address-validator':
-        return <WalletAddressValidator />;
-      case 'crypto-portfolio-tracker':
-        return <CryptoPortfolioTracker />;
-      case 'blockchain-explorer':
-        return <BlockchainExplorer />;
-      case 'crypto-news-aggregator':
-        return <CryptoNewsAggregator />;
+      case 'url-shortener':
+        return <UrlShortener />;
+      case 'schema-generator':
+        return <SchemaGenerator />;
+      
+      // Calculators & Converters
+      case 'unit-converter':
+        return <UnitConverter />;
+      case 'age-calculator':
+        return <AgeCalculator />;
+      
+      // Text & Content Tools
+      case 'text-diff-checker':
+        return <TextDiffChecker />;
       default:
         return (
           <div className="text-center py-12">
@@ -117,7 +136,11 @@ export function ToolModal({ tool, isOpen, onClose }: ToolModalProps) {
         <DialogHeader className="border-b border-slate-200 pb-4">
           <div className="flex items-center space-x-3">
             <div className={cn("w-12 h-12 rounded-xl flex items-center justify-center", tool.iconColor)}>
-              <i className={`fas fa-${tool.icon} text-xl`} />
+              {(() => {
+                const { getIcon } = require("@/lib/icon-map");
+                const IconComponent = getIcon(tool.icon);
+                return <IconComponent className="w-6 h-6 text-white" />;
+              })()}
             </div>
             <div>
               <DialogTitle className="text-2xl font-bold text-slate-800">{tool.title}</DialogTitle>

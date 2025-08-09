@@ -1,5 +1,6 @@
 import { Tool } from "@/lib/tools";
 import { cn } from "@/lib/utils";
+import { getIcon } from "@/lib/icon-map";
 
 interface ToolCardProps {
   tool: Tool;
@@ -17,7 +18,10 @@ export function ToolCard({ tool, onClick }: ToolCardProps) {
     >
       <div className="flex items-center justify-between mb-4">
         <div className={cn("w-14 h-14 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-all duration-300 float-animation", tool.iconColor)}>
-          <i className={`fas fa-${tool.icon} text-xl`} />
+          {(() => {
+            const IconComponent = getIcon(tool.icon);
+            return <IconComponent className="w-6 h-6 text-white" />;
+          })()}
         </div>
         <div className="flex flex-col space-y-1">
           {tool.popular && (

@@ -1,0 +1,70 @@
+You are an expert in web analytics, digital marketing, SEO content writing, and user behavior. Your task is to research and select the top 30 free online tools with the highest potential to drive traffic to the DevSuite website—a platform offering 30+ free tools across 6 categories: Developer Tools, Image & Media Tools, PDF & Docs, SEO & Marketing, Text & Content, and Calculators.
+
+About DevSuite:
+DevSuite is a powerful all-in-one collection of 30+ free online tools created by Muhammad to boost productivity, development efficiency, and digital workflows. It is privacy-focused, requires no registration, and offers lightning-fast performance for developers, marketers, and everyday users.
+
+Step 1 – Tool Selection Criteria:
+
+High Search Demand – Strong Google search volume & trends.
+
+Evergreen Use Cases – Year-round demand, not seasonal.
+
+Quick Problem Solvers – Instant, valuable results.
+
+Viral Potential – Shareable results or high repeat usage.
+
+Low Competition, High Need – High demand but few quality options.
+
+Step 2 – Categories to Cover:
+
+Developer Tools (e.g., JSON formatter, code beautifier)
+
+Productivity Tools (e.g., PDF converter, password generator)
+
+SEO & Marketing Tools (e.g., keyword analyzer, meta tag generator)
+
+Image & Media Tools (e.g., image compressor, background remover)
+
+Text & Content Tools (e.g., plagiarism checker, paraphraser)
+
+Calculators & Converters (e.g., currency converter, unit converter)
+
+Step 3 – Output for Each of the 30 Tools:
+
+Tool Name – Clear & SEO-friendly.
+
+Category – From the defined list.
+
+One-Sentence Hook – Enticing intro line.
+
+Detailed Description (80–120 words) – Explain purpose, features, and user benefits.
+
+Key Features – 4–6 bullet points.
+
+SEO Title – Max 60 characters, includes main keyword.
+
+Meta Description – 150–160 characters, keyword-rich & click-worthy.
+
+H1 Heading – Keyword-focused.
+
+Intro Paragraph – 50–80 words, engaging & benefit-driven.
+
+Main Content – 150–200 words with natural keyword placement.
+
+Keyword List – 8–12 high-traffic, relevant keywords.
+
+URL Slug – Short, SEO-friendly link (e.g., /json-formatter).
+
+Reason for High Traffic – 1–2 lines based on trends or user demand.
+
+Guidelines:
+
+Write naturally for humans while optimizing for search engines.
+
+Avoid keyword stuffing—use variations & synonyms.
+
+Ensure each tool page is unique, persuasive, and valuable.
+
+Structure so that content can be directly uploaded into DevSuite without major edits.
+
+The goal is to create a final list of the top 30 tools with fully SEO-optimized, ready-to-publish content that will attract high traffic and engage users.

@@ -44,7 +44,13 @@ class AnalyticsService implements IAnalyticsService {
     if (!this.storage) return [];
     try {
       const data = this.storage.getItem(this.usageKey);
-      return data ? JSON.parse(data) : [];
+      if (!data) return [];
+      const parsed = JSON.parse(data);
+      // Convert lastUsed strings back to Date objects
+      return parsed.map((item: any) => ({
+        ...item,
+        lastUsed: item.lastUsed ? new Date(item.lastUsed) : new Date()
+      }));
     } catch {
       return [];
     }
@@ -63,7 +69,13 @@ class AnalyticsService implements IAnalyticsService {
     if (!this.storage) return [];
     try {
       const data = this.storage.getItem(this.searchKey);
-      return data ? JSON.parse(data) : [];
+      if (!data) return [];
+      const parsed = JSON.parse(data);
+      // Convert timestamp strings back to Date objects
+      return parsed.map((item: any) => ({
+        ...item,
+        timestamp: item.timestamp ? new Date(item.timestamp) : new Date()
+      }));
     } catch {
       return [];
     }
