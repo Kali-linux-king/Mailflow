@@ -3,6 +3,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Tool } from "@/lib/tools";
 import { cn } from "@/lib/utils";
 import { analytics } from "@/lib/analytics";
+import { getIcon } from "@/lib/icon-map";
 
 // Tool components
 import { JsonFormatter } from "./tools/json-formatter";
@@ -31,6 +32,14 @@ import { PDFCompressor } from "./tools/pdf-compressor";
 import { SchemaGenerator } from "./tools/schema-generator";
 import { AgeCalculator } from "./tools/age-calculator";
 import { TextDiffChecker } from "./tools/text-diff-checker";
+import { HTMLMinifier } from "./tools/html-minifier";
+import { CSSMinifier } from "./tools/css-minifier";
+import { UUIDGenerator } from "./tools/uuid-generator";
+import { JSONValidator } from "./tools/json-validator";
+import { SQLFormatter } from "./tools/sql-formatter";
+import { FaviconGenerator } from "./tools/favicon-generator";
+import { ImageCropper } from "./tools/image-cropper";
+import { WebPConverter } from "./tools/webp-converter";
 
 interface ToolModalProps {
   tool: Tool | null;
@@ -75,6 +84,16 @@ export function ToolModal({ tool, isOpen, onClose }: ToolModalProps) {
         return <JWTDecoder />;
       case 'api-tester':
         return <ApiTester />;
+      case 'html-minifier':
+        return <HTMLMinifier />;
+      case 'css-minifier':
+        return <CSSMinifier />;
+      case 'uuid-generator':
+        return <UUIDGenerator />;
+      case 'json-validator':
+        return <JSONValidator />;
+      case 'sql-formatter':
+        return <SQLFormatter />;
       
       // Image & Media Tools
       case 'image-compressor':
@@ -87,6 +106,12 @@ export function ToolModal({ tool, isOpen, onClose }: ToolModalProps) {
         return <ImageResizer />;
       case 'svg-optimizer':
         return <SVGOptimizer />;
+      case 'favicon-generator':
+        return <FaviconGenerator />;
+      case 'image-cropper':
+        return <ImageCropper />;
+      case 'webp-converter':
+        return <WebPConverter />;
       
       // PDF & Document Tools
       case 'word-counter':
@@ -137,7 +162,6 @@ export function ToolModal({ tool, isOpen, onClose }: ToolModalProps) {
           <div className="flex items-center space-x-3">
             <div className={cn("w-12 h-12 rounded-xl flex items-center justify-center", tool.iconColor)}>
               {(() => {
-                const { getIcon } = require("@/lib/icon-map");
                 const IconComponent = getIcon(tool.icon);
                 return <IconComponent className="w-6 h-6 text-white" />;
               })()}

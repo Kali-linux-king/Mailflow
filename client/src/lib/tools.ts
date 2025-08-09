@@ -15,7 +15,7 @@ export interface Tool {
 }
 
 export const tools: Tool[] = [
-  // Developer Tools (10)
+  // Developer Tools (15)
   {
     id: 'json-formatter',
     title: 'JSON Formatter & Validator',
@@ -104,16 +104,61 @@ export const tools: Tool[] = [
   },
   {
     id: 'api-tester',
-    title: 'API Testing Tool',
-    description: 'Test REST APIs with GET, POST, PUT, DELETE requests, custom headers, and response analysis for developers.',
+    title: 'REST API Testing Tool',
+    description: 'Test REST APIs with GET, POST, PUT, DELETE requests, custom headers, response analysis, and request history.',
     category: 'developer',
     icon: 'Zap',
-    iconColor: 'tool-icon-yellow',
-    tags: ['api', 'test', 'rest', 'http', 'request', 'postman'],
-    popular: true
+    iconColor: 'tool-icon-purple',
+    tags: ['api', 'test', 'rest', 'http', 'request', 'response'],
+    trending: true
+  },
+  {
+    id: 'html-minifier',
+    title: 'HTML Minifier & Optimizer',
+    description: 'Minify HTML by removing comments, whitespace, and unnecessary characters to reduce file size and improve load times.',
+    category: 'developer',
+    icon: 'Minimize2',
+    iconColor: 'tool-icon-red',
+    tags: ['html', 'minify', 'optimize', 'compress', 'performance', 'size']
+  },
+  {
+    id: 'css-minifier',
+    title: 'CSS Minifier & Optimizer',
+    description: 'Minify CSS by removing whitespace, comments, and unnecessary characters to improve website performance.',
+    category: 'developer',
+    icon: 'Palette',
+    iconColor: 'tool-icon-pink',
+    tags: ['css', 'minify', 'optimize', 'compress', 'performance', 'style']
+  },
+  {
+    id: 'uuid-generator',
+    title: 'UUID Generator & Validator',
+    description: 'Generate secure UUIDs (v1, v4) and Nano IDs for unique identifiers in applications with bulk generation.',
+    category: 'developer',
+    icon: 'Key',
+    iconColor: 'tool-icon-cyan',
+    tags: ['uuid', 'guid', 'generate', 'unique', 'identifier', 'nanoid']
+  },
+  {
+    id: 'json-validator',
+    title: 'JSON Validator & Formatter',
+    description: 'Validate JSON syntax, format, minify, and analyze JSON structure with detailed error reporting and statistics.',
+    category: 'developer',
+    icon: 'FileJson',
+    iconColor: 'tool-icon-emerald',
+    tags: ['json', 'validate', 'format', 'syntax', 'error', 'structure']
+  },
+  {
+    id: 'sql-formatter',
+    title: 'SQL Formatter & Validator',
+    description: 'Format, minify, and validate SQL queries with proper indentation, keyword highlighting, and syntax checking.',
+    category: 'developer',
+    icon: 'Database',
+    iconColor: 'tool-icon-amber',
+    tags: ['sql', 'format', 'validate', 'query', 'database', 'syntax']
   },
 
-  // Image & Media Tools (8)
+  // Image & Media Tools (10)
   {
     id: 'image-compressor',
     title: 'Image Compressor & Optimizer',
@@ -158,7 +203,7 @@ export const tools: Tool[] = [
     title: 'Favicon Generator & Creator',
     description: 'Generate favicons in all required sizes (16x16 to 512x512) for websites, web apps, and mobile icons from any image.',
     category: 'image',
-    icon: 'Globe',
+    icon: 'Star',
     iconColor: 'tool-icon-red',
     tags: ['favicon', 'icon', 'website', 'mobile', 'app', 'generator']
   },
@@ -188,6 +233,24 @@ export const tools: Tool[] = [
     icon: 'Minimize2',
     iconColor: 'tool-icon-teal',
     tags: ['svg', 'optimize', 'minify', 'vector', 'compress', 'clean']
+  },
+  {
+    id: 'image-cropper',
+    title: 'Image Cropper & Editor',
+    description: 'Crop images to exact dimensions with preset aspect ratios, manual selection tools, and batch processing.',
+    category: 'image',
+    icon: 'Crop',
+    iconColor: 'tool-icon-yellow',
+    tags: ['crop', 'edit', 'resize', 'aspect', 'ratio', 'selection']
+  },
+  {
+    id: 'webp-converter',
+    title: 'Image Format Converter',
+    description: 'Convert images between WebP, JPEG, PNG, and BMP formats with quality control and batch processing.',
+    category: 'image',
+    icon: 'RefreshCw',
+    iconColor: 'tool-icon-blue',
+    tags: ['webp', 'convert', 'format', 'jpeg', 'png', 'batch']
   },
 
   // PDF & Document Tools (6)
