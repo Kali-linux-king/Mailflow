@@ -83,12 +83,14 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="gradient-bg py-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/70 to-white/50"></div>
+        <div className="relative z-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-dt-secondary mb-6">
-              30+ Free Online Bolt for{' '}
-              <span className="gradient-text">Developers & Marketers</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-dt-secondary mb-6 text-glow">
+              36+ Free Online Tools for{' '}
+              <span className="gradient-text bounce-in">Developers & Marketers</span>
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
               Boost your productivity with our comprehensive collection of developer tools, SEO utilities, converters, and more. No registration required, privacy-focused, lightning-fast processing.
@@ -118,23 +120,24 @@ export default function Home() {
 
           {/* Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">30+</div>
-              <div className="text-slate-600">Free Bolt</div>
+            <div className="text-center glass-effect rounded-2xl p-4 hover-lift">
+              <div className="text-3xl font-bold text-primary pulse-subtle">36+</div>
+              <div className="text-slate-700 font-medium">Free Tools</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">6</div>
-              <div className="text-slate-600">Categories</div>
+            <div className="text-center glass-effect rounded-2xl p-4 hover-lift">
+              <div className="text-3xl font-bold text-purple-600 bounce-in">8</div>
+              <div className="text-slate-700 font-medium">Categories</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">0</div>
-              <div className="text-slate-600">Registration</div>
+            <div className="text-center glass-effect rounded-2xl p-4 hover-lift">
+              <div className="text-3xl font-bold text-green-600 neon-glow">0</div>
+              <div className="text-slate-700 font-medium">Registration</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">100%</div>
-              <div className="text-slate-600">Privacy</div>
+            <div className="text-center glass-effect rounded-2xl p-4 hover-lift">
+              <div className="text-3xl font-bold text-blue-600 category-pulse">100%</div>
+              <div className="text-slate-700 font-medium">Privacy</div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 

@@ -21,6 +21,12 @@ import { UnitConverter } from "./tools/unit-converter";
 import { WordCounter } from "./tools/word-counter";
 import { UrlShortener } from "./tools/url-shortener";
 import { MetaGenerator } from "./tools/meta-generator";
+import { CryptoPriceTracker } from "./tools/crypto-price-tracker";
+import { CryptoConverter } from "./tools/crypto-converter";
+import { WalletAddressValidator } from "./tools/wallet-address-validator";
+import { CryptoPortfolioTracker } from "./tools/crypto-portfolio-tracker";
+import { BlockchainExplorer } from "./tools/blockchain-explorer";
+import { CryptoNewsAggregator } from "./tools/crypto-news-aggregator";
 
 interface ToolModalProps {
   tool: Tool | null;
@@ -74,6 +80,18 @@ export function ToolModal({ tool, isOpen, onClose }: ToolModalProps) {
         return <UrlShortener />;
       case 'meta-generator':
         return <MetaGenerator />;
+      case 'crypto-price-tracker':
+        return <CryptoPriceTracker />;
+      case 'crypto-converter':
+        return <CryptoConverter />;
+      case 'wallet-address-validator':
+        return <WalletAddressValidator />;
+      case 'crypto-portfolio-tracker':
+        return <CryptoPortfolioTracker />;
+      case 'blockchain-explorer':
+        return <BlockchainExplorer />;
+      case 'crypto-news-aggregator':
+        return <CryptoNewsAggregator />;
       default:
         return (
           <div className="text-center py-12">

@@ -106,8 +106,8 @@ export function UnitConverter() {
       const categoryData = conversions[category as keyof typeof conversions];
       if (!categoryData) return;
 
-      const fromFactor = categoryData[fromUnit as keyof typeof categoryData]?.factor || 1;
-      const toFactor = categoryData[toUnit as keyof typeof categoryData]?.factor || 1;
+      const fromFactor = (categoryData as any)[fromUnit]?.factor || 1;
+      const toFactor = (categoryData as any)[toUnit]?.factor || 1;
 
       // Convert to base unit, then to target unit
       const baseValue = numValue / fromFactor;
@@ -242,7 +242,7 @@ export function UnitConverter() {
             {result && (
               <div className="bg-green-50 border border-green-200 rounded-lg p-4 mt-6">
                 <div className="text-green-800 font-medium">
-                  {value} {getUnitsForCategory(cat)[fromUnit as keyof typeof getUnitsForCategory]?.name} = {result} {getUnitsForCategory(cat)[toUnit as keyof typeof getUnitsForCategory]?.name}
+                  {value} {(getUnitsForCategory(cat) as any)[fromUnit]?.name} = {result} {(getUnitsForCategory(cat) as any)[toUnit]?.name}
                 </div>
               </div>
             )}

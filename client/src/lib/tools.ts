@@ -1,4 +1,4 @@
-export type ToolCategory = 'developer' | 'image' | 'pdf' | 'seo' | 'calculator' | 'text';
+export type ToolCategory = 'developer' | 'image' | 'pdf' | 'seo' | 'calculator' | 'text' | 'crypto';
 
 export interface Tool {
   id: string;
@@ -304,6 +304,66 @@ export const tools: Tool[] = [
     icon: 'code',
     iconColor: 'tool-icon-red',
     tags: ['html', 'encode', 'entities']
+  },
+
+  // Crypto & Security Tools (6)
+  {
+    id: 'crypto-price-tracker',
+    title: 'Crypto Price Tracker',
+    description: 'Track real-time cryptocurrency prices, market caps, and price changes.',
+    category: 'crypto',
+    icon: 'trending-up',
+    iconColor: 'tool-icon-orange',
+    tags: ['crypto', 'price', 'bitcoin', 'ethereum'],
+    popular: true,
+    trending: true
+  },
+  {
+    id: 'crypto-converter',
+    title: 'Crypto Converter',
+    description: 'Convert between different cryptocurrencies and fiat currencies.',
+    category: 'crypto',
+    icon: 'repeat',
+    iconColor: 'tool-icon-green',
+    tags: ['crypto', 'convert', 'exchange']
+  },
+  {
+    id: 'wallet-address-validator',
+    title: 'Wallet Address Validator',
+    description: 'Validate cryptocurrency wallet addresses for Bitcoin, Ethereum, and more.',
+    category: 'crypto',
+    icon: 'shield-check',
+    iconColor: 'tool-icon-blue',
+    tags: ['wallet', 'address', 'validate', 'bitcoin', 'ethereum'],
+    secure: true
+  },
+  {
+    id: 'crypto-portfolio-tracker',
+    title: 'Portfolio Tracker',
+    description: 'Track your cryptocurrency portfolio performance and profit/loss.',
+    category: 'crypto',
+    icon: 'pie-chart',
+    iconColor: 'tool-icon-purple',
+    tags: ['portfolio', 'track', 'profit', 'loss']
+  },
+  {
+    id: 'blockchain-explorer',
+    title: 'Blockchain Explorer',
+    description: 'Explore blockchain transactions, blocks, and addresses.',
+    category: 'crypto',
+    icon: 'search',
+    iconColor: 'tool-icon-indigo',
+    tags: ['blockchain', 'explorer', 'transaction', 'block']
+  },
+  {
+    id: 'crypto-news-aggregator',
+    title: 'Crypto News Feed',
+    description: 'Stay updated with the latest cryptocurrency news and market analysis.',
+    category: 'crypto',
+    icon: 'newspaper',
+    iconColor: 'tool-icon-red',
+    tags: ['news', 'crypto', 'market', 'analysis'],
+    trending: true
   }
 ];
 
@@ -314,7 +374,8 @@ export const categories = [
   { id: 'pdf', name: 'PDF & Docs', icon: 'file-pdf', count: tools.filter(t => t.category === 'pdf').length },
   { id: 'seo', name: 'SEO & Marketing', icon: 'chart-line', count: tools.filter(t => t.category === 'seo').length },
   { id: 'calculator', name: 'Calculators', icon: 'calculator', count: tools.filter(t => t.category === 'calculator').length },
-  { id: 'text', name: 'Text & Content', icon: 'font', count: tools.filter(t => t.category === 'text').length }
+  { id: 'text', name: 'Text & Content', icon: 'font', count: tools.filter(t => t.category === 'text').length },
+  { id: 'crypto', name: 'Crypto & Security', icon: 'bitcoin', count: tools.filter(t => t.category === 'crypto').length }
 ];
 
 export function getToolById(id: string): Tool | undefined {
