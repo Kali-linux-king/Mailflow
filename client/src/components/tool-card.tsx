@@ -4,6 +4,8 @@ import { cn } from "@/lib/utils";
 interface ToolCardProps {
   tool: Tool;
   onClick: () => void;
+  isBookmarked?: boolean;
+  onBookmarkToggle?: (toolId: string) => void;
 }
 
 export function ToolCard({ tool, onClick }: ToolCardProps) {

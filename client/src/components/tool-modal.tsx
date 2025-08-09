@@ -32,6 +32,8 @@ interface ToolModalProps {
   tool: Tool | null;
   isOpen: boolean;
   onClose: () => void;
+  isBookmarked?: boolean;
+  onBookmarkToggle?: (toolId: string) => void;
 }
 
 export function ToolModal({ tool, isOpen, onClose }: ToolModalProps) {
